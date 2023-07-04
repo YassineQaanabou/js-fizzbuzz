@@ -14,34 +14,35 @@ Applica uno stile differente a seconda del valore dell'indice per i multipli di 
 */
 
 for (let i = 1; i <= 100; i++) {
+  if (i % 5 == 0 && i % 3 == 0) {
+    console.log("fizzbuzz");
 
+    document.getElementById("squaresContainer").innerHTML += `
+        <div class="square red_square">
+            <p class="text-center text-white fs-3 fw-3 vertical-align-square">fizzbuzz</p>
+        </div>
+    `;
+  } else if (i % 5 == 0) {
+    console.log("buzz");
 
-    if (i % 5 == 0 && i % 3 == 0) {
-
-        console.log("fizzbuzz");
-
-   
-    }
-
-        
-    else if (i % 5 == 0) {
-
-          console.log("buzz");
-
-    
-    }
-
-    else if (i % 3 == 0) {
-
-
-        console.log("fizz");
-
-    }
-
-  else {
-
-        console.log(i);
-
-    }
-
+    document.getElementById("squaresContainer").innerHTML += `
+          <div class="square yellow_square">
+              <p class="text-center text-white fs-3 fw-3 vertical-align-square">buzz</p>
+          </div>
+      `;
+  } else if (i % 3 == 0) {
+    console.log("fizz");
+    document.getElementById("squaresContainer").innerHTML += `
+        <div class="square green_square">
+            <p class="text-center text-white fs-3 fw-3 vertical-align-square">fizz</p>
+        </div>
+    `;
+  } else {
+    console.log(i);
+    document.getElementById("squaresContainer").innerHTML += `
+        <div class="square blue_square">
+            <p class="text-center text-white fs-3 fw-3 vertical-align-square">${i}</p>
+        </div>
+    `;
+  }
 }

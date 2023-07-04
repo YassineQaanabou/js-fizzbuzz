@@ -1,34 +1,34 @@
 .bg-dark-blue {
-    background-color: rgb(0, 49, 74);
+  background-color: rgb(0, 49, 74);
 }
 
 .square {
-    margin: 10px;
-    height: 100px;
-    width: 100px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
 }
 
 .vertical-align-square {
-    line-height: 100px;
-    vertical-align: middle;
+  line-height: 100px;
+  vertical-align: middle;
 }
 
 .container-squares-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.red_square{
-    background-color: red;
+.red_square {
+  background-color: red;
 }
-.green_square{
-    background-color: green;
+.green_square {
+  background-color: green;
 }
-.yellow_sqaure{
-    background-color: yellow;
+.yellow_square {
+  background-color: yellow;
 }
 
-.blue_square{
-    background-color: aqua;
+.blue_square {
+  background-color: aqua;
 }
